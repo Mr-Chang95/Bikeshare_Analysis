@@ -31,8 +31,8 @@ def get_filters():
 # get user input for month (all, january, february, ... , june)
     while True:
         filtering = input("Would you like to filter the data by month, day, or nothing? ").lower()
-        filterings = ["month", "day", "nothing"]
-        if filtering in filterings:
+        filters = ["month", "day", "nothing"]
+        if filtering in filters:
             if filtering == "month":
                 month = input("""Which month - January, February, March, April, May, or June?
 Please type out the full name of month.
@@ -67,7 +67,7 @@ Type 'all' to apply no filter""").lower()
                 day = "all"
                 month = "all"
                 break
-        elif filtering not in filterings:
+        elif filtering not in filters:
             print("Please input: 'month', 'day', or 'nothing'")
 
     print('-'*40)
