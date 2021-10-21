@@ -7,10 +7,21 @@
 US Bike Share Analysis
 
 ### Description
-Describe what your project is about and what it does
+DIn this project, I provided by Motivate (https://www.motivateco.com/), a bike share system provider for many major cities in the United States, to uncover bike share usage patterns. It is designed to be interactive and allows you to compare usage between three large cities: Chicago, New York City, and Washington, DC.
 
 ### Files used
-Include the files used
+The following libraries are required to run the project:
+
+time
+calender
+pandas
+numpy
+
+The following data files were used:
+
+new_york_city.csv
+chicago.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
