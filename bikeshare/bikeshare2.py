@@ -215,6 +215,7 @@ def view_datas(df):
     start_loc = 0
     if view_data != 'no':
         while True:
+            #Code to view data if "yes"
             print(df.iloc[start_loc: start_loc + 5])
             start_loc += 5
             view_display = input("Do you wish to continue?: ").lower()
