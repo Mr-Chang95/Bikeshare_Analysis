@@ -25,3 +25,7 @@ washington.csv
 
 ### Credits
 https://github.com/RobertBornemann/US-Bike-Sharing-Data-Analysis
+
+https://git-scm.com/docs/git-branch
+
+https://www.macworld.com/article/222558/macos-command-line-copying-moving-files-terminal.html
