@@ -30,10 +30,10 @@ def get_filters():
             print("Sorry invalid input. Please select Chicago, New York City, or Washington.")
 # get user input for month (all, january, february, ... , june)
     while True:
-        filtering = input("Would you like to filter the data by month, day, or nothing? ").lower()
+        filter = input("Would you like to filter the data by month, day, or nothing? ").lower()
         filters = ["month", "day", "nothing"]
-        if filtering in filters:
-            if filtering == "month":
+        if filter in filters:
+            if filter == "month":
                 month = input("""Which month - January, February, March, April, May, or June?
 Please type out the full name of month.
 Type 'all' to apply no filter""").lower()
@@ -48,7 +48,7 @@ Type 'all' to apply no filter""").lower()
                     print()
                     print("Please input month full name correctly! Let's start over.")
         # get user input for day of week (all, monday, tuesday, ... sunday)
-            elif filtering == "day":
+            elif filter == "day":
                 day = input("""Which day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?
 Please type the full name of day.
 Type 'all' to apply no filter""").lower()
@@ -62,12 +62,12 @@ Type 'all' to apply no filter""").lower()
                 else:
                     print()
                     print("Please input day full name correctly! Let's start over.")
-            elif filtering == "nothing":
+            elif filter == "nothing":
                 print("You have selected 'nothing'. ")
                 day = "all"
                 month = "all"
                 break
-        elif filtering not in filters:
+        elif filter not in filters:
             print("Please input: 'month', 'day', or 'nothing'")
 
     print('-'*40)
